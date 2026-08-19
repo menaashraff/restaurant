@@ -1,0 +1,677 @@
+* {
+   margin: 0;
+   panding: 0;
+   box-sizing: border-box; 
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: white;
+}
+.navbar {
+    height: 80px;
+
+    padding: 0 7%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background-color: white;
+
+    border-bottom: 1px solid #eee;
+}
+.logo {
+    font-size: 30px;
+
+    font-weight: bold;
+}
+
+.logo span {
+    color: #e85d04;
+}
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-size: 16px;
+    transition:0.3s;
+}
+.nav-links a:hover {
+    color: #e85d04;
+}
+.hero {
+    min-height: calc(100vh - 80px);
+
+    padding: 80px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 60px;
+
+    background-color: #fff8f2;
+}
+.hero-content {
+    flex: 1;
+}
+.hero-image {
+    flex: 1;
+}
+.hero-small-title {
+    color: #e85d04;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+.hero h1 {
+    font-size: 65px;
+
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+}
+.hero h1 span {
+    display: block;
+
+    color: #e85d04;
+}
+.hero-description {
+    max-width: 500px;
+
+    color: #666;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+.hero-button {
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    background-color: #e85d04;
+
+    color: white;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+.hero-button:hover {
+    background-color: #c94e00;
+
+    transform: translateY(-3px);
+}
+.hero-image img {
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+}
+/* ============================= */
+/* Special Dishes Section */
+/* ============================= */
+
+.dishes {
+    background-color: #f3fbff;
+    padding: 70px 7%;
+}
+
+
+/* Section Title */
+
+.dishes-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.dishes-title p {
+    color: #e85d04;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.dishes-title h2 {
+    font-size: 40px;
+    color: #222;
+    margin: 0;
+}
+
+
+/* Cards Container */
+
+.dishes-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+
+/* Card */
+
+.dish-card {
+    background-color: white;
+    width: 25%;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+}
+
+
+/* Card Hover */
+
+.dish-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+
+/* Card Image */
+
+.dish-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+
+/* Card Information */
+
+.dish-info {
+    padding: 25px;
+}
+
+.dish-info h3 {
+    font-size: 24px;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.dish-info p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+
+/* Price + Button */
+
+.dish-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dish-bottom span {
+    color: #e85d04;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.dish-bottom a {
+    background-color: #e85d04;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.dish-bottom a:hover {
+    background-color: #c94e00;
+    transform: translateY(-2px);
+}
+/* =========================
+   About Section
+========================= */
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+
+    padding: 80px 8%;
+    background-color: #ffffff;
+}
+
+/* Image */
+.about-image {
+    width: 50%;
+}
+
+.about-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+
+    border-radius: 25px;
+}
+
+/* Text */
+.about-content {
+    width: 45%;
+}
+
+.about-content > p:first-child {
+    color: #f15a00;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.about-content h2 {
+    font-size: 42px;
+    margin: 15px 0;
+    color: #222;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Button */
+.about-content a {
+    display: inline-block;
+
+    margin-top: 20px;
+    padding: 14px 28px;
+
+    background-color: #f15a00;
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 8px;
+}
+
+.about-content a:hover {
+    background-color: #d94f00;
+}
+/* =========================
+   Customer Favorites
+========================= */
+
+.favorites {
+    background-color: #f3fbff;
+    padding: 80px 7%;
+}
+
+
+/* Section Title */
+
+.favorites-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.favorites-title p {
+    color: #f15a00;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.favorites-title h2 {
+    color: #222;
+    font-size: 40px;
+    margin: 0;
+}
+
+
+/* Cards Container */
+
+.favorites-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+/* Favorite Card */
+
+.favorite-card {
+    width: 32%;
+    background-color: white;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s;
+}
+
+
+/* Hover Effect */
+
+.favorite-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+
+/* Image */
+
+.favorite-card img {
+    width: 100%;
+    height: 240px;
+
+    object-fit: cover;
+}
+
+
+/* Information */
+
+.favorite-info {
+    padding: 25px;
+}
+
+.favorite-info h3 {
+    color: #222;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.favorite-info p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+
+/* Price */
+
+.favorite-info span {
+    color: #f15a00;
+    font-size: 22px;
+    font-weight: bold;
+}
+/* =========================
+   Footer
+========================= */
+
+.footer {
+    background-color: #222;
+    color: white;
+    padding-top: 60px;
+}
+
+
+/* Footer Container */
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    padding: 0 8% 50px;
+}
+
+
+/* Footer Boxes */
+
+.footer-box {
+    width: 23%;
+}
+
+.footer-box h2 {
+    color: #f15a00;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.footer-box h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-box p {
+    color: #ccc;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* Links */
+
+.footer-box a {
+    display: block;
+
+    color: #ccc;
+    text-decoration: none;
+
+    margin-bottom: 12px;
+
+    transition: 0.3s;
+}
+
+.footer-box a:hover {
+    color: #f15a00;
+}
+
+
+/* Bottom */
+
+.footer-bottom {
+    border-top: 1px solid #444;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.footer-bottom p {
+    color: #aaa;
+    margin: 0;
+    font-size: 14px;
+}
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 900px) {
+
+    /* Hero */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+
+    /* Special Dishes */
+    .dishes-container {
+        flex-wrap: wrap;
+    }
+
+    .dish-card {
+        width: 45%;
+    }
+
+
+    /* About */
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+
+    /* Favorites */
+    .favorites-container {
+        flex-wrap: wrap;
+    }
+
+    .favorite-card {
+        width: 45%;
+    }
+
+
+    /* Footer */
+    .footer-container {
+        flex-wrap: wrap;
+    }
+
+    .footer-box {
+        width: 45%;
+    }
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+
+    /* Navbar */
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+
+    /* Hero */
+    .hero {
+        padding: 50px 5%;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-image img {
+        height: 350px;
+    }
+
+
+    /* Special Dishes */
+    .dishes {
+        padding: 60px 5%;
+    }
+
+    .dishes-title h2 {
+        font-size: 32px;
+    }
+
+    .dishes-container {
+        flex-direction: column;
+    }
+
+    .dish-card {
+        width: 100%;
+    }
+
+
+    /* About */
+    .about {
+        padding: 60px 5%;
+        gap: 35px;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .about-image img {
+        height: 300px;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .about-content h2 {
+        font-size: 32px;
+    }
+
+
+    /* Favorites */
+    .favorites {
+        padding: 60px 5%;
+    }
+
+    .favorites-title h2 {
+        font-size: 32px;
+    }
+
+    .favorites-container {
+        flex-direction: column;
+    }
+
+    .favorite-card {
+        width: 100%;
+    }
+
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        padding: 0 8% 40px;
+    }
+
+    .footer-box {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        padding: 20px 10px;
+    }
+}
+@media (max-width: 700px) {
+    .dishes-container {
+        grid-template-columns: 1fr;
+    }
+}
